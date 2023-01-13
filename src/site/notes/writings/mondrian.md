@@ -92,7 +92,7 @@ float random_c = floor(grid.x + rows)/size;
 cols = vec3(random(random_c));
 ```
 
-{% image "./src/writings/2021-07-07-mondrian/random1.png", "random gray fill", "(min-width: 30em) 50vw, 100vw" %}
+
 
 This chooses a random `float` based on `grid.x+rows` which is essentially our columns, and same values of rgb give it the color between white and black that we see. Again, this is just one of the ways to do this, because as the title says, we are going to fail to make a Mondrian so go ahead and comment out the second line and use that if you like! 
 
