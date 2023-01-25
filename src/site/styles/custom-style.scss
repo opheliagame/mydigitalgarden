@@ -3,11 +3,117 @@ body {
       ADD YOUR CUSTOM STYLIING HERE. (INSIDE THE body {...} section.)
       IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
    ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+
+    .index-grid {
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--background-primary);
+    }
+    
+  
+    .index-grid > .block-link {
+      // padding: 1px;
+      // border: 1px solid black;
+      background-color: var(--background-primary);
+    }
+    
+    .block-link > div {
+      background-color: var(--background-primary);
+    }
+
+    a.block-link {
+      text-decoration: none;
+      color: black;
+      text-transform: lowercase;
+    }
+
+    .block-link {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      font-weight: normal;
+    }
+
+    .block-link > div {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      display: grid;
+      padding: 0 1rem;
+      justify-items: start;
+      align-items: center;
+
+      // background-color: pink;
+      
+        
+    }
+
+    .block-link > div > span {
+      background-image: linear-gradient(
+        90deg,
+        palegreen 0%,
+   
+        palegreen 100%
+        );
+        background-repeat: no-repeat;
+        background-position: 0 1em;
+    }
+
+    .block-link.home > div {
+      // background-color: var(--background-secondary);
+      color: var(--text-accent);
+      font-weight: bold;
+      // color: p;
+    }
+
+    
+    @media (min-width:961px) {
+      .index-grid {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: grid;
+        // gap: 1px;
+        background-color: var(--background-secondary);
+      }
+
+      
+    .index-grid > .block-link {
+      // padding: 1px;
+      // border: 1px solid black;
+      background-color: var(--background-secondary);
+    }
+    
+  
+
+      .block-link > div {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+
+        background-color: white;
+      }
+
+      .block-link.home > div {
+        background-color: var(--background-secondary);
+        color: var(--text-accent);
+        font-weight: bold;
+      }
+
+      .block-link > div > span {
+        background-image: none;
+      }
+    }
+
+
 }
