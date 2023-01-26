@@ -44,7 +44,7 @@ module.exports = {
 
             const getCSSGridStyle = () => {
                 let qtree = new QuadTree(new Rectangle(200, 200, 200, 200), 2)
-                for (let i = 0; i < 15; i++) {
+                for (let i = 0; i < 18; i++) {
                     let p = new Point(Math.random() * 200 * 2, Math.random() * 200 * 2)
                     qtree.insert(p)
                 }
